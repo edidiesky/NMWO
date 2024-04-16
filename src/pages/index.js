@@ -4,7 +4,7 @@ const karla = Quantico({
   subsets: ["latin"],
   variable: "--font-karla",
   display: "swap",
-  weight: ["400", "500", "600", "700"],
+  weight: ["400","700" ],
 });
 import Inner from "@/components/Layout/Inner";
 import HomeIndex from "./(Home)/_components";
