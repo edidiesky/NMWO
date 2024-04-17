@@ -2,7 +2,7 @@
 import React from "react";
 import Hero from "./Hero";
 
-export default function WorkPage() {
+export default function HomeIndex() {
   return (
     <div>
       <Hero />

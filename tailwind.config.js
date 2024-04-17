@@ -24,7 +24,7 @@ module.exports = {
       },
       // Blog_Styles
       fontFamily: {
-        portfolio_bold: ["var(--font-karla)"],
+        mnwo_bold: ["Bold", "sans-serif"],
       },
       colors: {
         light_grey: "#F6F5F4",
