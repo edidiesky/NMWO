@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { GoArrowUpRight } from "react-icons/go";
 import Link from "next/link";
-import Menu from "./Menu";
+// import Menu from "./Menu";
 const Navbar = ({ text, path }) => {
   const [active, setActive] = useState(false);
   const [menu, setMenu] = useState(false);

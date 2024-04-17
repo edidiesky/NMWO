@@ -54,7 +54,7 @@ export default function Layout({ children }) {
           animate="enter"
           exit="exit"
         >
-          <Navbar />
+          {/* <Navbar /> */}
           {children}
         </motion.div>
       </motion.div>
