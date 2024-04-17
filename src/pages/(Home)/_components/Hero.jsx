@@ -50,7 +50,7 @@ export default function Hero() {
             <Link
               href={"/launch"}
               style={{ transition: "all .5s" }}
-              className="p-8 hover:shadow-2xl font-mnwo_bold cursor-pointer bg-white text-5xl uppercase text-dark"
+              className="p-8 hover:shadow-2xl cursor-pointer bg-white text-5xl uppercase text-dark"
             >
               LAUNCH DAPP
             </Link>

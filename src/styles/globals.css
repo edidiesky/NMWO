@@ -29,7 +29,12 @@ html {
   left: 0;
   /* top:0; */
 }
-
+.text-grey {
+  color:#737373;
+}
+.text-green {
+  color:#86CE84;
+}
 .line {
   display: flex !important;
   flex-wrap: wrap !important;
