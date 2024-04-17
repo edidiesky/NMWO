@@ -26,7 +26,7 @@ export default function Hero() {
 
   return (
     <>
-      <div data-scroll className="min-h-[100vh] relative flex">
+      <div data-scroll className="min-h-[100vh] relative flex flex-col">
         <Image
           alt="Cotion"
           width={0}
@@ -52,30 +52,31 @@ export default function Hero() {
             <div className="w-full grid grid-cols-1 gap-12 md:grid-cols-custom">
               <div className="w-full flex flex-col gap-16">
                 <div className="w-full flex gap-6 items-center text-3xl text-white">
-                  <h4>CURRENT QUEST</h4>
-                  <h4 className="text-grey">RAIDS</h4>
-                  <h4 className="text-green">UPCOMING</h4>
+                  <h4 className="cursor-pointer">CURRENT QUEST</h4>
+                  <h4 className="text-grey cursor-pointer">RAIDS</h4>
+                  <h4 className="text-green cursor-pointer">UPCOMING</h4>
                 </div>
                 <div className="w-full flex flex-col gap-8">
-                  {
-                    new Array(5).fill("").map((task, index)=> {
-                      return (
-                        <div key={index} className="w-full flex gap-4 items-center justify-between">
-                          <h4 className="text-4xl text-white">
-                            THE REVOLUTION IS NOW 42069 TOKENS
-                          </h4>
-                          <div className="flex items-center justify-end">
-                            <div
-                              style={{ transition: "all .4s" }}
-                              className="px-8 py-4 border-2 hover:shadow-2xl hover:bg-[#DB00FF57] cursor-pointer text-2xl uppercase text-[#fff] border-[rgba(255,255,255,1)]"
-                            >
-                              Start
-                            </div>
+                  {new Array(5).fill("").map((task, index) => {
+                    return (
+                      <div
+                        key={index}
+                        className="w-full flex gap-4 items-center justify-between"
+                      >
+                        <h4 className="text-4xl text-white">
+                          THE REVOLUTION IS NOW 42069 TOKENS
+                        </h4>
+                        <div className="flex items-center justify-end">
+                          <div
+                            style={{ transition: "all .4s" }}
+                            className="px-8 py-4 border-2 hover:shadow-2xl hover:bg-[#DB00FF57] cursor-pointer text-2xl uppercase text-[#fff] border-[rgba(255,255,255,1)]"
+                          >
+                            Start
                           </div>
                         </div>
-                      );
-                    })
-                  }
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
               <div className="w-full h-full md:w-[300px] flex flex-col gap-24">
@@ -112,6 +113,30 @@ export default function Hero() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex w-[90%] mx-auto max-w-custom z-40 py-4 items-center gap-4 justify-start">
+          <span className="cursor-pointer">
+            <Image
+              alt="Cotion"
+              width={0}
+              sizes="100vw"
+              height={0}
+              loading="lazy"
+              src={"/telegram.png"}
+              className="w-auto"
+            />
+          </span>
+          <span className="cursor-pointer">
+            <Image
+              alt="Cotion"
+              width={0}
+              sizes="100vw"
+              height={0}
+              loading="lazy"
+              src={"/twitter.png"}
+              className="w-auto"
+            />
+          </span>
         </div>
       </div>
     </>
