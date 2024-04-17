@@ -59,7 +59,7 @@ h4 .line {
 
 input::placeholder,
 textarea::placeholder {
-  color: #000;
+  color: #fff;
 }
 @media (max-width:580px) {
   .titleRef .line {

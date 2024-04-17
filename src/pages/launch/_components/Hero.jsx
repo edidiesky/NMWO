@@ -36,7 +36,7 @@ export default function Hero() {
           src={"/wallpaper_2.png"}
           className="image w-full absolute object-cover z-10 h-full"
         />
-        <div className="w-full absolute h-full z-20 bg-[rgba(0,0,0,.6)]"></div>
+        <div className="w-full absolute h-full z-20 bg-[rgba(0,0,0,.8)]"></div>
         {/* <div className="w-[90%] md:w-[80%] mx-auto max-w-custom_1"></div> */}
         <div className="w-full z-30 h-full flex-col gap-8 flex items-start ">
           <div className="flex items-center border-b-2 p-8 w-full border-[rgba(255,255,255,.8)] justify-between">

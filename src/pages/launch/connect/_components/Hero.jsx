@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Link from "next/link";
 import {} from "react-icons";
 import SplitType from "split-type";
@@ -13,16 +13,7 @@ import {
 } from "@/constants/utils/framer";
 import { motion, useInView } from "framer-motion";
 export default function Hero() {
-  const container = useRef(null);
-  const imageRef = useRef(null);
-  const inView = useInView(container);
-
-  const container2 = useRef(null);
-  const inView2 = useInView(container2, {
-    margin: "0px 100px -50px 0px",
-  });
-  const heroWords1 =
-    "A Software Developer who crafts captivating digital experiences.";
+  const [tab, setTab] = useState(null);
 
   return (
     <>
@@ -63,15 +54,31 @@ export default function Hero() {
                         key={index}
                         className="w-full flex gap-4 items-center justify-between"
                       >
-                        <h4 className="text-4xl text-white">
-                          THE REVOLUTION IS NOW 42069 TOKENS
-                        </h4>
+                        {tab === index ? (
+                          <div className="w-full">
+                            <input
+                              type="text"
+                              placeholder="Paste REPOST LINK"
+                              className="text-4xl border-2 border-[rgba(255,255,255,.3)] uppercase bg-transparent h-[80px] px-8 text-white"
+                            />
+                          </div>
+                        ) : (
+                          <h4 className="text-4xl text-white">
+                            THE REVOLUTION IS NOW 42069 TOKENS
+                          </h4>
+                        )}
+
                         <div className="flex items-center justify-end">
                           <div
+                            onClick={() => setTab(index)}
                             style={{ transition: "all .4s" }}
-                            className="px-8 py-4 border-2 hover:shadow-2xl hover:bg-[#DB00FF57] font-extrabold cursor-pointer text-3xl uppercase text-[#fff] border-[rgba(255,255,255,1)]"
+                            className={`px-8 py-4 border-2 hover:shadow-2xl ${
+                              tab === index
+                                ? "bg-[#DB00FF57]"
+                                : "bg-transparent"
+                            } hover:bg-[#DB00FF57] font-extrabold cursor-pointer text-3xl uppercase text-[#fff] border-[rgba(255,255,255,1)]`}
                           >
-                            Start
+                            {tab === index ? "Claim" : "Start"}
                           </div>
                         </div>
                       </div>
@@ -81,25 +88,25 @@ export default function Hero() {
               </div>
               <div className="w-full h-full md:w-[300px] flex flex-col gap-24">
                 <div className="w-full flex flex-col gap-8 text-grey  font-extrabold text-4xl">
-                  <div className="flex items-center justify-between w-full">
+                  <div className="flex gap-2 items-center justify-between w-full">
                     <h4 style={{ fontStyle: "italic" }}>WALLET</h4>
-                    <h4 style={{ fontStyle: "italic", color: "#F8F8F8" }}>
-                      ####
-                    </h4>
+                    <h5 className="text-2xl" style={{ fontStyle: "italic", color: "#F8F8F8" }}>
+                      3wdh...34Y
+                    </h5>
                   </div>
 
-                  <div className="flex items-center justify-between w-full">
+                  <div className="flex gap-2 items-center justify-between w-full">
                     <h4 style={{ fontStyle: "italic" }}>TOKENS</h4>
-                    <h4 style={{ fontStyle: "italic", color: "#F8F8F8" }}>
-                      ###
-                    </h4>
+                    <h5 className="text-2xl" style={{ fontStyle: "italic", color: "#F8F8F8" }}>
+                     54637
+                    </h5>
                   </div>
 
-                  <div className="flex items-center justify-between w-full">
+                  <div className="flex gap-2 items-center justify-between w-full">
                     <h4 style={{ fontStyle: "italic" }}>RANK</h4>
-                    <h4 style={{ fontStyle: "italic", color: "#F8F8F8" }}>
-                      ##
-                    </h4>
+                    <h5 className="text-2xl" style={{ fontStyle: "italic", color: "#F8F8F8" }}>
+                      243
+                    </h5>
                   </div>
                 </div>
                 <div className="w-full flex items-start justify-end">
