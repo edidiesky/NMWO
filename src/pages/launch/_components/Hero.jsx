@@ -48,7 +48,7 @@ export default function Hero() {
               REFRESH
             </span>
           </div>
-          <div className="w-[95%] mx-auto max-w-custom">
+          <div className="w-[95%] py-12 pb-20 mx-auto max-w-custom">
             <div className="w-full grid grid-cols-1 gap-12 md:grid-cols-custom">
               <div className="w-full flex flex-col gap-16">
                 <div className="w-full flex gap-6 items-center text-3xl text-white">
@@ -56,9 +56,9 @@ export default function Hero() {
                   <h4 className="text-grey">RAIDS</h4>
                   <h4 className="text-green">UPCOMING</h4>
                 </div>
-                <div className="w-full flex flex-col gap-4">
+                <div className="w-full flex flex-col gap-8">
                   {
-                    new Array(8).fill("").map((task, index)=> {
+                    new Array(5).fill("").map((task, index)=> {
                       return (
                         <div key={index} className="w-full flex gap-4 items-center justify-between">
                           <h4 className="text-4xl text-white">
@@ -78,7 +78,7 @@ export default function Hero() {
                   }
                 </div>
               </div>
-              <div className="w-full h-full md:w-[300px] flex flex-col gap-24 justify-between">
+              <div className="w-full h-full md:w-[300px] flex flex-col gap-24">
                 <div className="w-full flex flex-col gap-8 text-grey  font-extrabold text-4xl">
                   <div className="flex items-center justify-between w-full">
                     <h4 style={{ fontStyle: "italic" }}>WALLET</h4>
