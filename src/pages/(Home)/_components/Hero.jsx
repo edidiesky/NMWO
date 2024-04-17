@@ -41,7 +41,7 @@ export default function Hero() {
         <div className="w-full absolute h-full z-20 bg-[rgba(0,0,0,.7)]"></div>
         {/* <div className="w-[90%] md:w-[80%] mx-auto max-w-custom_1"></div> */}
         <div className="w-full z-30 h-full flex items-center justify-center">
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 items-center justify-center">
             <h3 className="text-2xl text-center uppercase text-white">
               <span className="block text-xl"> ENTER THE</span> NEW MEME WORLD
               ORDER
