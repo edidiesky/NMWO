@@ -36,10 +36,10 @@ export default function Hero() {
           src={"/wallpaper_2.png"}
           className="image w-full absolute object-cover z-10 h-full"
         />
-        <div className="w-full absolute h-full z-20 bg-[rgba(0,0,0,.6)]"></div>
+        <div className="w-full absolute h-full z-20 bg-[rgba(0,0,0,.8)]"></div>
         {/* <div className="w-[90%] md:w-[80%] mx-auto max-w-custom_1"></div> */}
         <div className="w-full z-30 h-full flex-col gap-8 flex items-start ">
-          <div className="flex items-center border-b-2 p-8 w-full border-[rgba(255,255,255,.8)] justify-between">
+          <div className="flex items-center border-b-2 p-8 w-full border-[rgba(255,255,255,.7)] justify-between">
             <h3 className="text-6xl flex-1 text-center uppercase text-white">
               $NMWO LAUNCH PAD V1.0
             </h3>
@@ -56,7 +56,28 @@ export default function Hero() {
                   <h4 className="text-grey cursor-pointer">RAIDS</h4>
                   <h4 className="text-green cursor-pointer">UPCOMING</h4>
                 </div>
-                <div className="w-full flex flex-col gap-8"></div>
+                <div className="w-full flex flex-col gap-8">
+                  {new Array(3).fill("").map((task, index) => {
+                    return (
+                      <div
+                        key={index}
+                        className="w-full flex gap-4 items-center justify-between"
+                      >
+                        <h4 className="text-4xl text-white">
+                          THE REVOLUTION IS NOW 42069 TOKENS
+                        </h4>
+                        <div className="flex items-center justify-end">
+                          <div
+                            style={{ transition: "all .4s" }}
+                            className="px-8 py-4 border-2 hover:shadow-2xl hover:bg-[#DB00FF57] font-extrabold cursor-pointer text-3xl uppercase text-[#fff] border-[rgba(255,255,255,1)]"
+                          >
+                            Start
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
               <div className="w-full h-full md:w-[300px] flex flex-col gap-24">
                 <div className="w-full flex flex-col gap-8 text-grey  font-extrabold text-4xl">
@@ -82,13 +103,12 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="w-full flex items-start justify-end">
-                  <Link
-                    href={"/launch/connect"}
+                  <div
                     style={{ transition: "all .4s" }}
-                    className="px-8 py-4 border-2 hover:shadow-2xl hover:opacity-[.6] cursor-pointer text-3xl uppercase text-[#C6C085] border-[rgba(255,255,255,1)]"
+                    className="px-8 py-4 border-2 hover:shadow-2xl font-extrabold hover:opacity-[.6] cursor-pointer text-2xl uppercase text-[#A44545] border-[rgba(255,255,255,1)]"
                   >
-                    CONNECT
-                  </Link>
+                    DISCONNECT
+                  </div>
                 </div>
               </div>
             </div>
