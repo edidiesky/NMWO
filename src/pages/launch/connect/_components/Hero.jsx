@@ -118,10 +118,10 @@ export default function Hero() {
                     </h5>
                   </div>
                 </div>
-                <div className="w-full flex items-start justify-end">
+                <div className="w-full flex items-start justify-start lg:justify-end">
                   <div
                     style={{ transition: "all .4s" }}
-                    className="px-8 py-4 border-2 hover:shadow-2xl font-extrabold hover:opacity-[.6] cursor-pointer text-xl lg:text-2xl uppercase text-[#A44545] border-[rgba(255,255,255,1)]"
+                    className="px-8 py-4 border-2 hover:shadow-2xl font-extrabold hover:opacity-[.6] cursor-pointer text-2xl uppercase text-[#A44545] border-[rgba(255,255,255,1)]"
                   >
                     DISCONNECT
                   </div>
