@@ -40,9 +40,9 @@ export default function Hero() {
             </span>
           </div>
           <div className="w-[95%] py-12 pb-20 mx-auto max-w-custom">
-            <div className="w-full flex flex-col-reverse  md:grid grid-cols-1 gap-20 md:grid-cols-custom">
+            <div className="w-full flex flex-col-reverse  lg:grid grid-cols-1 gap-20 lg:grid-cols-custom">
               <div className="w-full flex flex-col gap-16">
-                <div className="w-[90%] mx-auto md:w-full justify-between flex gap-4 md:gap-6 items-center text-xl md:text-3xl text-white">
+                <div className="w-[90%] mx-auto lg:w-full justify-between flex gap-4 lg:gap-6 items-center text-xl lg:text-3xl text-white">
                   <h4 className="cursor-pointer">CURRENT QUEST</h4>
                   <h4 className="text-grey cursor-pointer">RAIDS</h4>
                   <h4 className="text-green cursor-pointer">UPCOMING</h4>
@@ -52,18 +52,18 @@ export default function Hero() {
                     return (
                       <div
                         key={index}
-                        className="w-[90%] mx-auto md:w-full flex gap-4 items-center justify-between"
+                        className="w-[90%] mx-auto lg:w-full flex gap-4 items-center justify-between"
                       >
                         {tab === index ? (
                           <div className="w-full">
                             <input
                               type="text"
                               placeholder="Paste REPOST LINK"
-                              className="text-xl w-full md:text-4xl border-2 border-[rgba(255,255,255,.3)] uppercase bg-transparent h-[65px] md:h-[80px] px-8 text-white"
+                              className="text-xl w-full lg:text-4xl border-2 border-[rgba(255,255,255,.3)] uppercase bg-transparent h-[65px] lg:h-[80px] px-8 text-white"
                             />
                           </div>
                         ) : (
-                          <h4 className="text-xl md:text-4xl text-white">
+                          <h4 className="text-xl lg:text-4xl text-white">
                             THE REVOLUTION IS NOW 42069 TOKENS
                           </h4>
                         )}
@@ -72,11 +72,11 @@ export default function Hero() {
                           <div
                             onClick={() => setTab(index)}
                             style={{ transition: "all .4s" }}
-                            className={`px-4 md:px-8 py-4 border-2 hover:shadow-2xl ${
+                            className={`px-4 lg:px-8 py-4 border-2 hover:shadow-2xl ${
                               tab === index
                                 ? "bg-[#DB00FF57]"
                                 : "bg-transparent"
-                            } hover:bg-[#DB00FF57] font-extrabold cursor-pointer text-xl md:text-3xl uppercase text-[#fff] border-[rgba(255,255,255,1)]`}
+                            } hover:bg-[#DB00FF57] font-extrabold cursor-pointer text-xl lg:text-3xl uppercase text-[#fff] border-[rgba(255,255,255,1)]`}
                           >
                             {tab === index ? "Claim" : "Start"}
                           </div>
@@ -86,8 +86,8 @@ export default function Hero() {
                   })}
                 </div>
               </div>
-              <div className="w-[90%] mx-auto h-full md:w-[300px] flex flex-col gap-16 md:gap-24">
-                <div className="w-full flex flex-col gap-4 md:gap-8 text-grey  font-extrabold text-3xl md:text-4xl">
+              <div className="w-[90%] mx-auto h-full lg:w-[300px] flex flex-col gap-16 lg:gap-24">
+                <div className="w-full flex flex-col gap-4 lg:gap-8 text-grey  font-extrabold text-3xl lg:text-4xl">
                   <div className="flex gap-2 items-center justify-between w-full">
                     <h4 style={{ fontStyle: "italic" }}>WALLET</h4>
                     <h5
@@ -121,7 +121,7 @@ export default function Hero() {
                 <div className="w-full flex items-start justify-end">
                   <div
                     style={{ transition: "all .4s" }}
-                    className="px-8 py-4 border-2 hover:shadow-2xl font-extrabold hover:opacity-[.6] cursor-pointer text-xl md:text-2xl uppercase text-[#A44545] border-[rgba(255,255,255,1)]"
+                    className="px-8 py-4 border-2 hover:shadow-2xl font-extrabold hover:opacity-[.6] cursor-pointer text-xl lg:text-2xl uppercase text-[#A44545] border-[rgba(255,255,255,1)]"
                   >
                     DISCONNECT
                   </div>
@@ -130,7 +130,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="flex w-[90%] mx-auto max-w-custom z-40 py-4 items-center gap-4 justify-center md:justify-start">
+        <div className="flex w-[90%] mx-auto max-w-custom z-40 py-4 items-center gap-4 justify-center lg:justify-start">
           <span className="cursor-pointer">
             <Image
               alt="Cotion"
