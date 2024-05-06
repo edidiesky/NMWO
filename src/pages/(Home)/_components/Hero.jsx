@@ -41,7 +41,7 @@ export default function Hero() {
         />
         <div className="w-full absolute h-full z-20 bg-[rgba(0,0,0,.6)]"></div>
         {/* <div className="w-[90%] md:w-[80%] mx-auto max-w-custom_1"></div> */}
-        <div className="w-full z-30 h-full flex items-center justify-center">
+        <div className="w-[90%] mx-auto z-30 h-full flex items-center justify-center">
           <div className="flex flex-col gap-8 items-center justify-center">
             <h3 className="text-2xl text-center uppercase text-white">
               <span className="block text-xl"> ENTER THE</span> NEW MEME WORLD
@@ -50,7 +50,7 @@ export default function Hero() {
             <Link
               href={"/launch"}
               style={{ transition: "all .5s" }}
-              className="p-8 hover:shadow-2xl cursor-pointer bg-white text-5xl uppercase text-dark"
+              className="p-8 hover:shadow-2xl text-center cursor-pointer bg-white text-3xl md:text-5xl uppercase text-dark"
             >
               LAUNCH DAPP
             </Link>
@@ -63,7 +63,7 @@ export default function Hero() {
                   height={0}
                   loading="lazy"
                   src={"/telegram.png"}
-                  className="w-auto"
+                  className="w-12 md:w-auto"
                 />
               </span>
               <span className="cursor-pointer">
@@ -74,7 +74,7 @@ export default function Hero() {
                   height={0}
                   loading="lazy"
                   src={"/twitter.png"}
-                  className="w-auto"
+                  className="w-12 md:w-auto"
                 />
               </span>
             </div>
